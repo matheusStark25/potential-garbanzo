@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fluxo de caixa</title>
+  </head>
+  <body>
+    <div class="caixa">
+      <header>
+        <h1>Fluxo de caixa</h1>
+
+            <table>
+
+              <thead>lista de mercadorias
+                <!-- lista de estoque -->
+              <ul id="listas-compras">
+                <li id = "compras">
+                   <label for="unidade1">Unidade:</label>
+                   <input type="number" class ="unidades" placeholder="digite a unidade">
+                   <label for="valor1">valor:</label>
+                   <input type="number" class ="valores" placeholder="digite o valor">
+                
+                </li>
+              
+                    <label for="unidade2">Unidade:</label>
+                    <input type="number" class ="unidades" placeholder="digite a unidade">
+                    <label for="valor2">valor:</label>
+                    <input type="number" class ="valores" placeholder="digite o valor">
+                  
+            
+                <li>
+                    <label for="unidade3">Unidade:</label>
+                    <input type="number" class ="unidades"  placeholder="digite a unidade">
+                    <label for="valor3">valor:</label>
+                    <input type="number" class ="valores" placeholder="digite o valor">
+                    
+                </li>
+
+                <li>
+                    <label for="unidade4">Unidade:</label>
+                    <input type="number" class ="unidades" placeholder="digite a unidade">
+                    <label for="valor4">valor:</label>
+                    <input type="number" class ="valores" placeholder="digite o valor">
+                   
+                </li>
+
+                <li>
+                  
+                    <label for="unidade5">Unidade:</label>
+                    <input type="number" class ="unidades"  placeholder="digite a unidade">
+                    <label for="valor5">valor:</label>
+                    <input type="number"  class ="valores" placeholder="digite o valor">
+                    
+                </li>
+
+                <li>
+                    <label for="unidade6">Unidade:</label>
+                    <input type="number" class ="unidades" placeholder="digite a unidade">
+                    <label for="valor6">valor:</label>
+                    <input type="number"  class ="valores" placeholder="digite o valor">
+             
+                    
+                <li>
+                   
+                </li>
+                    <label for="unidade7">Unidade:</label>
+                    <input type="number" class ="unidades"placeholder="digite a unidade">
+                    <label for="valor7">valor:</label>
+                    <input type="number" class ="valores" placeholder="digite o valor">
+               
+                <li>
+        
+                <li>
+                    <label for="unidade8">Unidade:</label>
+                    <input type="number"  class ="unidades"placeholder="digite a unidade">
+                    <label for="valor8">valor:</label>
+                    <input type="number"  class ="valores" placeholder="digite o valor">
+                   
+                </li>
+
+                <!-- resultado o lucro bruto obtido -->
+              </ul>
+            </table><br>
+            <span><b>Lucro Bruto(mensal)</b></span><br>
+            <button type="button" id ="resultadoBruto" onclick="LucroBruto()">Calcular</button><br>
+           <hr> 
+                 <!-- tabela de despesas-->
+              <table> 
+                <thead>despesas fixas
+                    <!-- listas de despesas-->
+                <ul class="listas-despesas">
+                    <br>
+                    <li>
+                        <label for="luz">Luz:
+                        <input type="number" id ="luz" class="gasto" placeholder="digite o valor da luz"><br>
+                        <label for="agua">Agua:
+                        <input type="number" id="agua" class="gasto"  placeholder="digiteo  o valor a agua"><br>
+                        <label for="aluguel">Aluguel:
+                        <input type="number"  id="aluguel" class="gasto"  placeholder="digite o valor do aluguel"><br>
+                        <label for="internet">Internet</label>
+                        <input type="number" id ="internet" class="gasto" placeholder="digiteo valor da internet"><br>
+                        <label for="funcionarios">Funcionarios:
+                        <input type="number" id ="funcionario" class="gasto" placeholder="quantidade de Funcionarios"><br>
+                        <label for="valorfuncionario">Valor:</label>
+                        <input type="number" id="valoresf" placeholder="quanto por funcionario"><br>
+                        
+
+                         <!-- total de gastos-->
+                        <output><b>Total de Gastos</b></output><br>
+                        <button type="button" id ="resultadol" onclick="despesasFixas()">Calcular</button>
+                        <hr>
+                    </li>
+                </ul>
+              </table>
+              <hr>
+                <output><strong>Lucro Liquido</strong></output>
+                <button type="button" id ="resultado" onclick="lucroLiquido()">Calcular</button>
+          
+      </header>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
